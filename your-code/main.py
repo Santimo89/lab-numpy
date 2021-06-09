@@ -9,20 +9,20 @@ print(np.__version__)
 #3. Generate a 2x3x5 3-dimensional array with random values. Assign the array to variable "a"
 # Challenge: there are at least three easy ways that use numpy to generate random arrays. How many ways can you find?
 
-
-
+a = np.random.randit((2,3,5))
+a.shape
 #4. Print a.
 
-
+a
 
 #5. Create a 5x2x3 3-dimensional array with all values equaling 1.
 #Assign the array to variable "b"
 
-
+b = np.ones((2,3,5))
 
 #6. Print b.
 
-
+print(b)
 
 #7. Do a and b have the same size? How do you prove that in Python code?
 
@@ -31,11 +31,11 @@ print(np.__version__)
 
 #8. Are you able to add a and b? Why or why not?
 
-
+Yes, since you can use the append(), insert() and extend() functions
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
 
-
+b = a.transpose()
 
 #10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
 
@@ -47,8 +47,9 @@ print(np.__version__)
 
 
 #12. Multiply a and c. Assign the result to e.
+a * c
 
-
+e = a * c
 
 #13. Does e equal to a? Why or why not?
 
